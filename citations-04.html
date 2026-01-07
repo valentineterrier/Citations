@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	/* typographie */
+	body {
+		font-family: 'Times New Roman', Times, serif;
+		font-weight: 40px;
+		font-size: 40px;
+		line-height: 1.1;
+		color: black;
+		}
+
+	/* flex sur parent */
+	div { 
+		display: flex;
+		gap: 1rem;
+		}
+		
+	/* flex: 1 sur les enfants = colonnes égales */
+	p {flex: 1;}
+
+	/* couleur fond */
+	body {background-color: yellow;}
+
+</style>
+</head>
+
+<body>
+	<div>
+		<p>“Don't <br> design for <br> brands.</p>
+		<p>Design for <br>  people <br> interacting <br> with <br> brands.”</p>
+	</div>
+
+	<link rel="stylesheet" href="navigation.css">
+	<nav><a href="index.html"> retour</a></nav>
+</body>
+</html>

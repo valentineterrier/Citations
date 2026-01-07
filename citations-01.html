@@ -5,33 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-		body { font-family: "Public Sans", sans-serif; }
-		h1 {
-			font-size: 5vw;
-			font-weight: 200;
-			line-height: 1.1;
-			letter-spacing: -0.02;
+<style>
+	/* typographie */
+	body {font-family: Arial, Helvetica, sans-serif;}
+
+	h1 {
+		font-size: 5vw;
+		font-weight: bold;
+		line-height: 1.1;
+		letter-spacing: -0.02;
+		color: white;
+		}
+		
+	/* layout */
+	body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
+			
+	/* citation */
+	h1 { max-width: 28ch; }
+	h1 { animation: fadein 2.5s ease-in-out; }
+		@keyframes fadein { from { opacity: 0; transform: translateY(20px); }
+	
+		to { opacity: 1; transform: translateY(0); }
 		}
 
-		/* layout */
-		body{
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+	/* auteur */
+	.auteur {
+		width: 100%;
+		text-align: right;
+		margin-top: 1rem;
+		font-size: 3.5vw;
+		font-weight: normal;
+		font-style: italic;
 		}
-		h1 { max-width: 24ch;}
-		/* couleur */
-		body {
-			background: linear-gradient( #f7e0e8 )
-			}
+
+	/* couleur fond */
+	body{background-color: black;}
+
 </style>
 </head>
 <body>
-	<h1>No matter how cool your interface is, it would be better if there were less of it.
-	<p>— Alan Cooper</p>
+	<h1> No matter cool your interface is, it would be better if there were less of it.
+	<p class="auteur">— Alan Cooper </p>
+
+	<link rel="stylesheet" href="navigation.css">
+	<nav><a href="index.html"> retour</a></nav>
 </body>
 </html>
